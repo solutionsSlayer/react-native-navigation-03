@@ -1,32 +1,29 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Card from '../components/Card';
+import ArticlesSimilaire from './AriclesSImilaire';
 
-const DetailsScreen = ({navigation}) => {
+const DetailsScreen = ({navigation, route}) => {
     return (
-      <View style={styles.container}>
-        <Text>Details Screen</Text>
-        <Button
-            title="Go to details screen...again"
-            onPress={() => navigation.push("Details")}
-        />
-        <Button
-            title="Go to home"
-            onPress={() => navigation.navigate("Home")}
-        />
-        <Button
-            title="Go back"
-            onPress={() => navigation.goBack()}
-        />
-      </View>
+        <View style={styles.wrapper}>
+            <Card article={route.params} />
+
+            <ArticlesSimilaire navigation={navigation} nom={route.params.name} />
+        </View>
     );
 };
 
 export default DetailsScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1, 
-    alignItems: 'center', 
-    justifyContent: 'center'
-  },
+    wrapper: {
+        marginVertical: 5,
+        marginLeft: 15,
+        marginRight: 15,
+        marginTop: 35
+    },
+    tinyLogo: {
+        width: 50,
+        height: 50,
+    },
 });

@@ -1,5 +1,5 @@
 {
-  "name": "rnv5",
+  "name": "leboncoin",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -25,12 +25,15 @@
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.8",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-vector-icons": "^6.6.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@reduxjs/toolkit": "^1.5.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",

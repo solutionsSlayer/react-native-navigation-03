@@ -32,17 +32,6 @@ const MainTabScreen = () => (
         }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={DetailsStackScreen}
-        options={{
-          tabBarLabel: 'Updates',
-          tabBarColor: '#1f65ff',
-          tabBarIcon: ({ color }) => (
-            <Icon name="ios-notifications" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
         name="Profile"
         component={ProfileScreen}
         options={{
@@ -105,4 +94,3 @@ const DetailsStackScreen = ({navigation}) => (
         }} />
 </DetailsStack.Navigator>
 );
-  

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const BookmarkScreen = () => {
+const EventScreen = () => {
     return (
       <View style={styles.container}>
         <Text style={{marginBottom: 10}}>Example for event cliked button</Text>
@@ -13,7 +13,7 @@ const BookmarkScreen = () => {
     );
 };
 
-export default BookmarkScreen;
+export default EventScreen;
 
 const styles = StyleSheet.create({
   container: {
